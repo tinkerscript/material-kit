@@ -20,7 +20,7 @@ module.exports = {
       new HtmlWebpackPlugin({
         hash: true,
         template: path.resolve(__dirname, 'index.html'),
-        minify: true
+        minify: false
       }),
       new CopyWebpackPlugin([{
         from: 'content',

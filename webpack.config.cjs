@@ -19,7 +19,8 @@ module.exports = {
     return [
       new HtmlWebpackPlugin({
         hash: true,
-        template: path.resolve(__dirname, 'index.html')
+        template: path.resolve(__dirname, 'index.html'),
+        minify: true
       }),
       new CopyWebpackPlugin([{
         from: 'content',
